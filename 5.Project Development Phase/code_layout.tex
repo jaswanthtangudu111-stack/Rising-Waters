@@ -1,0 +1,115 @@
+\documentclass[11pt, a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1in]{geometry}
+\usepackage{longtable}
+\usepackage{makecell}
+\usepackage{array}
+\usepackage{graphicx}
+
+% Formatting lengths
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.8em}
+\renewcommand{\arraystretch}{1.5}
+
+\begin{document}
+
+% Header Section
+\noindent
+\begin{minipage}[t]{0.48\textwidth}
+\vspace{0pt}
+\includegraphics[width=5cm]{smartbridge_logo.png}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.48\textwidth}
+\vspace{0pt}
+\raggedleft
+\includegraphics[width=4.2cm]{skillwallet_logo.png}
+\end{minipage}
+
+% Project Details Table
+\begin{center}
+\begin{tabular}{|p{0.30\textwidth}|p{0.60\textwidth}|}
+\hline
+\textbf{Date} & 15 March 2024 \\ \hline
+\textbf{Team ID} & XXXXXX \\ \hline
+\textbf{Project Name} & Rising Waters: A Machine Learning Approach to Flood Prediction \\ \hline
+\textbf{Maximum Marks} & 5 Marks \\ \hline
+\end{tabular}
+\end{center}
+
+\vspace{1em}
+
+% Title and Instructions
+\begin{center}
+    \Large \textbf{Code-Layout, Readability and Reusability}
+\end{center}
+
+This document evaluates the quality of the codebase in terms of its structure, readability, and reusability. Well-organized code with proper naming conventions, comments, and modular design ensures that the project is maintainable and can be extended or reused in future development.
+
+\vspace{1em}
+
+% Table 1: Code Layout Checklist
+\textbf{Code Layout Checklist:}
+
+\noindent
+\begin{longtable}{|c|>{\bfseries}p{0.22\textwidth}|p{0.32\textwidth}|>{\centering\arraybackslash}p{0.15\textwidth}|p{0.18\textwidth}|}
+\hline
+\textbf{S.No} & \textbf{Code Quality Parameter} & \textbf{Description} & \textbf{Followed (Yes/No/Partial)} & \textbf{Remarks} \\ \hline
+\endfirsthead
+\endhead % Empty to prevent repeating headers on new pages
+\endfoot % Empty to prevent repeating footers on new pages
+\endlastfoot
+
+1 & Consistent Indentation & Uniform spacing/tabs used throughout the code & Yes & Proper indentation \\ \hline
+2 & Proper File Structure & Files and folders are logically organized & Yes & Well organized \\ \hline
+3 & Meaningful Variable Names & Variables reflect their purpose clearly & Yes & Clear naming \\ \hline
+4 & Function/Method Names & Functions are descriptively named & Yes & Descriptive functions \\ \hline
+5 & Code Comments & Inline and block comments explain logic & Partial & Basic comments \\ \hline
+6 & Modular Design & Code is split into reusable functions/modules & Yes & Modular structure \\ \hline
+7 & No Redundant Code & Duplicate or unused code is removed & Yes & No duplicate code \\ \hline
+8 & Error Handling & Exceptions and errors are handled gracefully & Yes & Error handling added \\ \hline
+\end{longtable}
+
+\vspace{1em}
+
+% Table 2: Reusable Components / Modules
+\textbf{Reusable Components / Modules:}
+
+\noindent
+\begin{longtable}{|c|p{0.25\textwidth}|p{0.22\textwidth}|p{0.20\textwidth}|>{\centering\arraybackslash}p{0.15\textwidth}|}
+\hline
+\textbf{S.No} & \textbf{Component / Module Name} & \textbf{Language / Technology} & \textbf{Where Reused} & \textbf{Reusability Level (High/Medium/Low)} \\ \hline
+\endfirsthead
+\endhead
+\endfoot
+\endlastfoot
+
+1 & Navigation Bar & HTML, Bootstrap & All Pages & High \\ \hline
+2 & Base Template (base.html) & Flask (Jinja2) & Home, Predict, Result, About & High \\ \hline
+3 & Stylesheet (style.css) & CSS & Entire Web Application & High \\ \hline
+4 & Prediction Function & Python (Flask) & Prediction Route & High \\ \hline
+5 & Trained XGBoost Model & Python (XGBoost) & Prediction Module & High \\ \hline
+\end{longtable}
+
+\vspace{1em}
+
+% Table 3: Overall Code Quality Assessment
+\textbf{Overall Code Quality Assessment:}
+
+\noindent
+\begin{longtable}{|>{\bfseries}p{0.40\textwidth}|>{\centering\arraybackslash}p{0.15\textwidth}|p{0.35\textwidth}|}
+\hline
+\textbf{Aspect} & \textbf{Rating (1-5)} & \textbf{Comments} \\ \hline
+\endfirsthead
+\endhead
+\endfoot
+\endlastfoot
+
+Code Layout \& Structure & 5 & Well-organized folder structure with clear separation of frontend, backend and ML components. \\ \hline
+Readability & 5 & Code is easy to understand with meaningful names and consistent formatting. \\ \hline
+Reusability & 5 & Reusable templates, CSS, JavaScript and prediction logic implemented. \\ \hline
+Documentation / Comments & 4 & Key sections documented; additional comments can further improve maintainability. \\ \hline
+Overall Score & 4.8/5 & Clean, modular and maintainable implementation following good coding practices. \\ \hline
+\end{longtable}
+
+\end{document}

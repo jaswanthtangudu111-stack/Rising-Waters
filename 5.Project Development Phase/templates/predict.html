@@ -1,0 +1,203 @@
+{% extends "base.html" %}
+
+{% block title %}Flood Prediction{% endblock %}
+
+{% block content %}
+
+<section class="predict-page">
+
+<div class="container">
+
+<div class="text-center mb-5">
+
+<h1 class="fw-bold">Flood Prediction Dashboard</h1>
+
+<p class="text-muted">
+
+Enter the environmental parameters below to predict flood probability.
+
+</p>
+
+</div>
+
+<form action="/result" method="POST">
+
+<div class="row">
+
+<!-- Weather Factors -->
+
+<div class="col-lg-6 mb-4">
+
+<div class="input-card">
+
+<h4 class="mb-4">
+🌧 Weather Factors
+</h4>
+
+<div class="mb-3">
+<label class="form-label">Monsoon Intensity</label>
+<input type="number" class="form-control" name="MonsoonIntensity" min="0" max="20" required>
+</div>
+
+<div class="mb-3">
+<label class="form-label">Climate Change</label>
+<input type="number" class="form-control" name="ClimateChange" min="0" max="20" required>
+</div>
+
+<div class="mb-3">
+<label class="form-label">Topography Drainage</label>
+<input type="number" class="form-control" name="TopographyDrainage" min="0" max="20" required>
+</div>
+
+<div class="mb-3">
+<label class="form-label">River Management</label>
+<input type="number" class="form-control" name="RiverManagement" min="0" max="20" required>
+</div>
+
+<div class="mb-3">
+<label class="form-label">Landslides</label>
+<input type="number" class="form-control" name="Landslides" min="0" max="20" required>
+</div>
+
+</div>
+
+</div>
+
+<!-- Environment -->
+
+<div class="col-lg-6 mb-4">
+
+<div class="input-card">
+
+<h4 class="mb-4">
+🌿 Environmental Factors
+</h4>
+
+<div class="mb-3">
+<label class="form-label">Deforestation</label>
+<input type="number" class="form-control" name="Deforestation" min="0" max="20" required>
+</div>
+
+<div class="mb-3">
+<label class="form-label">Urbanization</label>
+<input type="number" class="form-control" name="Urbanization" min="0" max="20" required>
+</div>
+
+<div class="mb-3">
+<label class="form-label">Wetland Loss</label>
+<input type="number" class="form-control" name="WetlandLoss" min="0" max="20" required>
+</div>
+
+<div class="mb-3">
+<label class="form-label">Watersheds</label>
+<input type="number" class="form-control" name="Watersheds" min="0" max="20" required>
+</div>
+
+<div class="mb-3">
+<label class="form-label">Agricultural Practices</label>
+<input type="number" class="form-control" name="AgriculturalPractices" min="0" max="20" required>
+</div>
+
+</div>
+
+</div>
+
+<!-- Infrastructure -->
+
+<div class="col-lg-6 mb-4">
+
+<div class="input-card">
+
+<h4 class="mb-4">
+🏗 Infrastructure
+</h4>
+
+<div class="mb-3">
+<label class="form-label">Dams Quality</label>
+<input type="number" class="form-control" name="DamsQuality" min="0" max="20" required>
+</div>
+
+<div class="mb-3">
+<label class="form-label">Drainage Systems</label>
+<input type="number" class="form-control" name="DrainageSystems" min="0" max="20" required>
+</div>
+
+<div class="mb-3">
+<label class="form-label">Deteriorating Infrastructure</label>
+<input type="number" class="form-control" name="DeterioratingInfrastructure" min="0" max="20" required>
+</div>
+
+<div class="mb-3">
+<label class="form-label">Siltation</label>
+<input type="number" class="form-control" name="Siltation" min="0" max="20" required>
+</div>
+
+<div class="mb-3">
+<label class="form-label">Coastal Vulnerability</label>
+<input type="number" class="form-control" name="CoastalVulnerability" min="0" max="20" required>
+</div>
+
+</div>
+
+</div>
+
+<!-- Human Factors -->
+
+<div class="col-lg-6 mb-4">
+
+<div class="input-card">
+
+<h4 class="mb-4">
+👥 Human Factors
+</h4>
+
+<div class="mb-3">
+<label class="form-label">Population Score</label>
+<input type="number" class="form-control" name="PopulationScore" min="0" max="20" required>
+</div>
+
+<div class="mb-3">
+<label class="form-label">Political Factors</label>
+<input type="number" class="form-control" name="PoliticalFactors" min="0" max="20" required>
+</div>
+
+<div class="mb-3">
+<label class="form-label">Encroachments</label>
+<input type="number" class="form-control" name="Encroachments" min="0" max="20" required>
+</div>
+
+<div class="mb-3">
+<label class="form-label">Inadequate Planning</label>
+<input type="number" class="form-control" name="InadequatePlanning" min="0" max="20" required>
+</div>
+
+<div class="mb-3">
+<label class="form-label">Ineffective Disaster Preparedness</label>
+<input type="number" class="form-control" name="IneffectiveDisasterPreparedness" min="0" max="20" required>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="text-center mt-4">
+
+<button type="submit" class="predict-btn">
+
+<i class="fa-solid fa-water me-2"></i>
+
+Predict Flood Risk
+
+</button>
+
+</div>
+
+</form>
+
+</div>
+
+</section>
+
+{% endblock %}

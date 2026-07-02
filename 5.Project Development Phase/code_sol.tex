@@ -1,0 +1,107 @@
+\documentclass[11pt, a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1in]{geometry}
+\usepackage{longtable}
+\usepackage{makecell}
+\usepackage{array}
+\usepackage{graphicx}
+
+% Formatting lengths
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.8em}
+\renewcommand{\arraystretch}{1.5}
+
+\begin{document}
+
+% Header Section
+\noindent
+\begin{minipage}[t]{0.48\textwidth}
+\vspace{0pt}
+\includegraphics[width=5cm]{smartbridge_logo.png}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.48\textwidth}
+\vspace{0pt}
+\raggedleft
+\includegraphics[width=4.2cm]{skillwallet_logo.png}
+\end{minipage}
+
+% Project Details Table
+\begin{center}
+\begin{tabular}{|p{0.30\textwidth}|p{0.60\textwidth}|}
+\hline
+\textbf{Date} & 15 March 2026 \\ \hline
+\textbf{Team ID} & XXXXXX \\ \hline
+\textbf{Project Name} & Rising Waters: A Machine Learning Approach to Flood Prediction \\ \hline
+\textbf{Maximum Marks} & 5 Marks \\ \hline
+\end{tabular}
+\end{center}
+
+\vspace{1em}
+
+% Title and Intro
+\begin{center}
+    \Large \textbf{Coding \& Solution}
+\end{center}
+
+This section evaluates the quality and completeness of your implemented code and the overall solution. Your submission should demonstrate working functionality, clean code practices, and alignment with your defined requirements.
+
+\textbf{Instructions:}
+\begin{enumerate}
+    \item Ensure your code is well-structured, commented, and follows best practices for your chosen technology stack.
+    \item The solution should address the core problem statement and implement the key functional requirements.
+    \item Include all source files, configuration files, and setup instructions needed to run the application.
+    \item Attach or link to your code repository (e.g., GitHub) in the table below.
+\end{enumerate}
+
+\vspace{1em}
+
+% Solution Summary Table
+\textbf{Solution Summary}
+
+\noindent
+\begin{longtable}{|>{\bfseries}p{0.30\textwidth}|p{0.65\textwidth}|}
+\hline
+Field & \textbf{Details} \\ \hline
+\endfirsthead
+\endhead % Empty to prevent repeating headers on new pages
+\endfoot % Empty to prevent repeating footers on new pages
+\endlastfoot
+
+Repository Link / URL & [Paste your GitHub / GitLab or hosted link here] \\ \hline
+Programming Language(s) & Python, HTML5, CSS3, JavaScript \\ \hline
+Framework(s) Used & Flask, Bootstrap 5, XGBoost, Scikit-learn \\ \hline
+Key Features Implemented & Flood prediction, XGBoost model, Flask web app, Risk analysis, Safety recommendations, Responsive UI \\ \hline
+Pending / Incomplete Features & Live weather API integration, Interactive map visualization (Future Scope) \\ \hline
+Setup / Run Instructions & Install requirements → Run python app.py → Open http://127.0.0.1:5000 \\ \hline
+\end{longtable}
+
+\vspace{1em}
+
+% Code Quality Checklist Table
+\textbf{Code Quality Checklist}
+
+\noindent
+\begin{longtable}{|c|>{\raggedright\arraybackslash}p{0.65\textwidth}|c|}
+\hline
+\textbf{S.No} & \textbf{Criteria} & \textbf{Status (Yes / No)} \\ \hline
+\endfirsthead
+\endhead
+\endfoot
+\endlastfoot
+
+1 & Code is modular and organized into functions / classes & Yes \\ \hline
+2 & Meaningful variable and function names are used & Yes \\ \hline
+3 & Code includes comments / documentation where necessary & Partial \\ \hline
+4 & Error handling is implemented for critical operations & Yes \\ \hline
+5 & The application runs without critical errors & Yes \\ \hline
+6 & Code is committed to a version control repository & Yes \\ \hline
+\end{longtable}
+
+\vspace{1em}
+
+\textbf{Additional Notes / Comments:}
+
+The project successfully implements an AI-powered flood prediction system using the XGBoost Machine Learning algorithm. The application follows a modular architecture with a Flask backend and responsive web interface, providing accurate flood probability prediction and risk analysis.
+
+\end{document}
